@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\Mail;
 
 class OnUserSubscriptionConfirmedListener
 {
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
     public function handle(UserSubscriptionConfirmed $event): void
     {

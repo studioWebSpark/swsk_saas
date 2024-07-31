@@ -15,9 +15,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AuthenticationController extends Controller
 {
-    public function __construct(private readonly AuthenticationContract $service)
-    {
-    }
+    public function __construct(private readonly AuthenticationContract $service) {}
 
     /**
      * @return JsonResponse

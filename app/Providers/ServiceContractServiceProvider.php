@@ -13,7 +13,5 @@ class ServiceContractServiceProvider extends ServiceProvider
         $this->app->bind(AuthenticationContract::class, AuthenticationService::class);
     }
 
-    public function boot(): void
-    {
-    }
+    public function boot(): void {}
 }

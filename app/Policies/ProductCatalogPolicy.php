@@ -10,32 +10,17 @@ class ProductCatalogPolicy
 {
     use HandlesAuthorization;
 
-    public function viewAny(User $user): bool
-    {
+    public function viewAny(User $user): bool {}
 
-    }
+    public function view(User $user, ProductCatalog $productCatalog): bool {}
 
-    public function view(User $user, ProductCatalog $productCatalog): bool
-    {
-    }
+    public function create(User $user): bool {}
 
-    public function create(User $user): bool
-    {
-    }
+    public function update(User $user, ProductCatalog $productCatalog): bool {}
 
-    public function update(User $user, ProductCatalog $productCatalog): bool
-    {
-    }
+    public function delete(User $user, ProductCatalog $productCatalog): bool {}
 
-    public function delete(User $user, ProductCatalog $productCatalog): bool
-    {
-    }
+    public function restore(User $user, ProductCatalog $productCatalog): bool {}
 
-    public function restore(User $user, ProductCatalog $productCatalog): bool
-    {
-    }
-
-    public function forceDelete(User $user, ProductCatalog $productCatalog): bool
-    {
-    }
+    public function forceDelete(User $user, ProductCatalog $productCatalog): bool {}
 }
