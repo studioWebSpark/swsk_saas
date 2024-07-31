@@ -2,6 +2,4 @@
 
 namespace App\Services\Contracts;
 
-interface ServiceContract
-{
-}
+interface ServiceContract {}
